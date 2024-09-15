@@ -40,7 +40,7 @@ const SendOTP = () => {
         console.log(data.otp);
         dispatch(theOtp(data.otp));
         //sending this to index.js to rec 1_5
-        const socket = io.connect("https://drop-dorm.vercel.app");
+        const socket = io.connect("https://drop-dorm.vercel.app/");
 
         //   https://dormdrop.onrender.com
         socket.on("connect", () => {
