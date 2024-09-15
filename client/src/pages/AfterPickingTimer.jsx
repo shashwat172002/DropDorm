@@ -82,7 +82,7 @@ const AfterPickingTimer = () => {
       console.log("enter otp");
     }
     if (otpData == currentOtp) {
-      const socket = io.connect("https://drop-dorm.vercel.app/"); //https://dormdrop.onrender.com
+      const socket = io.connect("https://drop-dorm.vercel.app"); //https://dormdrop.onrender.com
       socket.on("connect", () => {
         console.log("Connected to server");
         socket.emit("Verified", { message: "yes" });

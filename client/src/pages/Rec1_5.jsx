@@ -8,7 +8,7 @@ export default function Rec1_5() {
   const navigate = useNavigate();
   const { currentRecSideSender } = useSelector((state) => state.RECSIDESENDER);
 
-  const socket = io.connect("https://drop-dorm.vercel.app/");
+  const socket = io.connect("https://drop-dorm.vercel.app");
 
   useEffect(() => {
     socket.on("connect", () => {
