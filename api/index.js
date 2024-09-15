@@ -183,7 +183,7 @@ server.listen(3000, () => {
   console.log("Server is running on port 3000!");
 });
 
-app.use("/api/auth", authRoutes);
+app.use("/auth", authRoutes);
 app.use("/api/sender", senderRoutes);
 app.use("/api/receiver", receiverRoutes);
 app.use("/api/otp", otpRoutes);
