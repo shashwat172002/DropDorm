@@ -14,7 +14,9 @@ const ReceiverPost = () => {
   const [receiverData, setreceiverData] = useState([]);
   const navigate = useNavigate();
 
-  const socket = io("https://drop-dorm.vercel.app/");
+  const socket = io('https://drop-dorm.vercel.app', {
+    transports: ['websocket']
+  });
 
   //         https://dormdrop.onrender.com
 
