@@ -184,13 +184,13 @@ server.listen(3000, () => {
 });
 
 app.use("/auth", authRoutes);
-app.use("/api/sender", senderRoutes);
-app.use("/api/receiver", receiverRoutes);
-app.use("/api/otp", otpRoutes);
-app.use("/api/dashboard", dashboardRoutes);
-app.use("/api/yourorders", yourOrdersRoutes);
-app.use("/api/senderend", senderendRoutes);
-app.use("/api/rating", ratingRoutes);
+app.use("/sender", senderRoutes);
+app.use("/receiver", receiverRoutes);
+app.use("/otp", otpRoutes);
+app.use("/dashboard", dashboardRoutes);
+app.use("/yourorders", yourOrdersRoutes);
+app.use("/senderend", senderendRoutes);
+app.use("/rating", ratingRoutes);
 
 // app.use(express.static(path.join(__dirname,'/client/dist')));
 
